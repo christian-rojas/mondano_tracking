@@ -1,9 +1,9 @@
 const express = require("express");
 const path = require("path");
-const cors = require("cors");
+// const cors = require("cors");
 
 const app = express();
-app.use(cors());
+// app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the 'public' directory
