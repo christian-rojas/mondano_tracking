@@ -54,7 +54,7 @@
             const tracking_id = data[0].tracking_id;
             console.log("tracking_id: " + tracking_id);
 
-            fetch(`/api/envia/${tracking_id}`)
+            fetch(`https://envia-webhook.vercel.app/envia/${tracking_id}`)
               .then((response) => {
                 if (!response.ok) {
                   throw new Error("Tracking not found");
